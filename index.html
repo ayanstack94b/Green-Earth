@@ -8,34 +8,46 @@
     <!-- Tailwind + Daisy -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
     <main class="conatiner mx-auto text-center">
-        <h2 class="text-[#4ade80] font-bold text-4xl mt-10">Choose your Trees</h2>
+        <h2 class="text-[#4ade80] font-bold text-4xl my-10">Choose your Trees</h2>
 
         <!-- parent div -->
-        <section class="grid grid-cols-3 gap-8">
+        <section class="grid grid-cols-12 gap-8 container mx-auto">
 
             <!-- category div -->
-            <div class="col-span-3">
+            <div class="col-span-3 bg-white card card-body">
                 <h2 class="text-3xl font-bold">Categories</h2>
+                <div class="">
+                    <button id="all-trees-btn" class="btn btn-success w-full mb-5">All trees</button>
+
+                    <!-- dynamic category div -->
+                    <div id="categories-container" class="space-y-4">
+
+                    </div>
+                </div>
             </div>
 
             <!-- Trees main div -->
-            <div class="col-span-6">
+            <div class="col-span-6 bg-green-500">
 
             </div>
 
             <!-- cart div -->
-            <div class="col-span-3"></div>
+            <div class="col-span-3 bg-red-300">
+
+            </div>
+
         </section>
 
     </main>
 
 
     <!-- js file -->
-    <script src=""></script>
+    <script src="/scripts.js"></script>
 </body>
 
 </html>
